@@ -1,38 +1,38 @@
 @mixin border-radius($radius) {
-    -webkit-border-radius: $radius;
-    -moz-border-radius: $radius;
-    border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
 }
 @mixin box-shadow($left, $top, $radius, $color) {
-    box-shadow: $left $top $radius $color;
-    -webkit-box-shadow: $left $top $radius $color;
-    -moz-box-shadow: $left $top $radius $color;
+  box-shadow: $left $top $radius $color;
+  -webkit-box-shadow: $left $top $radius $color;
+  -moz-box-shadow: $left $top $radius $color;
 }
 @mixin transition($transition){
-    -webkit-transition: $transition;
-        -moz-transition: $transition;
-        -ms-transition: $transition;
-        -o-transition: $transition;
-        transition: $transition;
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -ms-transition: $transition;
+  -o-transition: $transition;
+  transition: $transition;
 }
 @mixin linx ($link, $visit, $hover, $active) {
-    a {
-        color: $link;
-        &:visited {
-            color: $visit;
-        }
-        &:hover {
-            color: $hover;   
-        }
-        &:active {
-            color: $active;
-        }
+  a {
+    color: $link;
+    &:visited {
+      color: $visit;
     }
+    &:hover {
+      color: $hover;   
+    }
+    &:active {
+      color: $active;
+    }
+  }
 }
 @mixin set-position ($position, $top, $right, $bottom, $left) {
-    top: $top;
-    right: $right;
-    bottom: $bottom;
-    left: $left;
-    position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  position: $position;
 }
