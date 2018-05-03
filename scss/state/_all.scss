@@ -1,24 +1,24 @@
 
-.container{
+.container {
   padding: 0 30px;
 }
-.row{
+.row {
   margin: 0 -10px;
   &:after {
-      display: table;
-      clear: both;
-      content:'';
+    display: table;
+    clear: both;
+    content:'';
   }
 }
-.pull-left{
+.pull-left {
   float: left;
 }
-.pull-right{
+.pull-right {
   float: right;
 }
-.clearfix{
+.clearfix {
   clear: both;
 }
-.text-center{
+.text-center {
   text-align: center;
 }

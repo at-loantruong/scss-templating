@@ -3,33 +3,19 @@
   -moz-border-radius: $radius;
   border-radius: $radius;
 }
-@mixin box-shadow($left, $top, $radius, $color) {
-  box-shadow: $left $top $radius $color;
-  -webkit-box-shadow: $left $top $radius $color;
-  -moz-box-shadow: $left $top $radius $color;
+@mixin box-shadow($horizonta, $vertical, $blur-radius, $spread-radius, $color) {
+  box-shadow: $horizonta $vertical $blur-radius $spread-radius $color;
+  -webkit-box-shadow: $horizonta $vertical $blur-radius $spread-radius $color;
+  -moz-box-shadow: $horizonta $vertical $blur-radius $spread-radius $color;
 }
-@mixin transition($transition){
+@mixin transition($transition) {
   -webkit-transition: $transition;
   -moz-transition: $transition;
   -ms-transition: $transition;
   -o-transition: $transition;
   transition: $transition;
 }
-@mixin linx ($link, $visit, $hover, $active) {
-  a {
-    color: $link;
-    &:visited {
-      color: $visit;
-    }
-    &:hover {
-      color: $hover;   
-    }
-    &:active {
-      color: $active;
-    }
-  }
-}
-@mixin set-position ($position, $top, $right, $bottom, $left) {
+@mixin set-position($position, $top, $right, $bottom, $left) {
   top: $top;
   right: $right;
   bottom: $bottom;

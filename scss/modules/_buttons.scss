@@ -8,7 +8,7 @@ button, .btn {
   padding: 8px 15px;
   cursor: pointer;
 }
-.btn--primary{
-  background: $primary-color;
+.btn--primary {
   @include border-radius(20px);
+  background: $primary-color;
 }

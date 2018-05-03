@@ -1,23 +1,23 @@
-#footer{
+.page-footer {
   background: $footer-bg;
-  .footer-info{
+  .footer-info {
     padding: 30px;
     color: $second-color;
-    .footer-links{
-      li{
+    .footer-links { 
+      li {
         padding: 5px 0;
         border-bottom: 1px solid $second-color;
-        &:first-child{
+        &:first-child {
           padding-top: 0;
         }
-        a{
+        a {
           color: $second-color;
         }
       }
     }
   }
-  .copyright{
-      padding: 20px 30px;
-      background: $copyright-bg;
+  .copyright {
+    padding: 20px 30px;
+    background: $copyright-bg;
   }
 }

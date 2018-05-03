@@ -1,10 +1,10 @@
-input{
+input {
   padding: 10px;
   margin-bottom: 10px;
-  background: #1f1f1f;
+  background: $background-icon;
   border-radius: 5px;
 }
-input[type="submit"]{
+input[type="submit"] {
   color: $primary-color;
   text-transform: uppercase;
 }
