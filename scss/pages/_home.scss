@@ -31,11 +31,16 @@
     }
   }
 }
-.head-title p {
-  color: $second-color;
-  font-weight: 400;
-  font-size: 16px;
-  margin-bottom: 30px;
+.head-title {
+  h2 {
+    text-transform: uppercase;
+  }
+  p {
+    color: $second-color;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
 }
 .separator {
   height: 5px;

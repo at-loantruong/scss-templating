@@ -16,7 +16,7 @@ $i: 1;
   @for $i from 1 through $l-column-count {
     .col-sm-#{$i} {
       float: left;
-     width: $l-col-width * $i;
+      width: $l-col-width * $i;
     }
   }
 }
@@ -35,5 +35,4 @@ $i: 1;
       width: $l-col-width * $i;
     }
   }
-  
 }

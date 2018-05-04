@@ -1,6 +1,10 @@
 @font-face { 
   font-family: 'Georgia';
-  src: url(../fonts/Georgia.woff);
+  src: url('../fonts/Georgia.eot'),
+       url('../fonts/Georgia.woff') format('woff'),
+       url('../fonts/Georgia.otf') format('otf'),
+       url('../fonts/Georgia.ttf')  format('truetype'),
+       url('../fonts/Georgia.svg') format('svg');
 }
 
 * {
@@ -29,6 +33,7 @@ h1 {
   font-size: 30px;
   color: $title-color;
   line-height: 36px;
+  text-transform: uppercase;
 }
 h2 {
   font-size: 28px;
@@ -36,9 +41,12 @@ h2 {
   line-height: 36px;
 }
 h3 {
-  font-size: 18px;
+  font-size: 20px;
 }
 h4 {
+  font-size: 18px;
+}
+h5 {
   font-size: 16px;
 }
 h3,

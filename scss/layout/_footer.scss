@@ -3,6 +3,9 @@
   .footer-info {
     padding: 30px;
     color: $second-color;
+    h4 {
+      text-transform: uppercase;
+    }
     .footer-links { 
       li {
         padding: 5px 0;

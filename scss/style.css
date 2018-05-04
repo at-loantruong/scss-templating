@@ -299,7 +299,7 @@ table {
     width: 100%; } }
 @font-face {
   font-family: 'Georgia';
-  src: url(../fonts/Georgia.woff); }
+  src: url("../fonts/Georgia.eot"), url("../fonts/Georgia.woff") format("woff"), url("../fonts/Georgia.otf") format("otf"), url("../fonts/Georgia.ttf") format("truetype"), url("../fonts/Georgia.svg") format("svg"); }
 * {
   margin: 0;
   padding: 0;
@@ -327,7 +327,8 @@ body {
 h1 {
   font-size: 30px;
   color: #121212;
-  line-height: 36px; }
+  line-height: 36px;
+  text-transform: uppercase; }
 
 h2 {
   font-size: 28px;
@@ -335,9 +336,12 @@ h2 {
   line-height: 36px; }
 
 h3 {
-  font-size: 18px; }
+  font-size: 20px; }
 
 h4 {
+  font-size: 18px; }
+
+h5 {
   font-size: 16px; }
 
 h3,
@@ -345,7 +349,8 @@ h4 {
   font-weight: 400;
   line-height: 35px; }
 
-button, .btn {
+button,
+.btn {
   width: 50%;
   text-align: center;
   color: #ffffff;
@@ -374,7 +379,8 @@ input[type="submit"] {
   background: #ffffff;
   border-top: 5px solid #81b300; }
 
-.top-header ul li, .main-header ul li {
+.top-header ul li,
+.main-header ul li {
   display: inline-block; }
 
 .top-header .logo {
@@ -427,13 +433,19 @@ input[type="submit"] {
     text-transform: uppercase; }
 
 .search-wrapper {
-  display: inline-flex; }
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; }
 
 .page-footer {
   background: #3b3b3b; }
   .page-footer .footer-info {
     padding: 30px;
     color: #888888; }
+    .page-footer .footer-info h4 {
+      text-transform: uppercase; }
     .page-footer .footer-info .footer-links li {
       padding: 5px 0;
       border-bottom: 1px solid #888888; }
@@ -473,6 +485,8 @@ input[type="submit"] {
     padding: 5px;
     background: #ffffff; }
 
+.head-title h2 {
+  text-transform: uppercase; }
 .head-title p {
   color: #888888;
   font-weight: 400;
@@ -506,3 +520,5 @@ input[type="submit"] {
 
 .text-center {
   text-align: center; }
+
+/*# sourceMappingURL=style.css.map */
